@@ -1,0 +1,3 @@
+ng add angular-cli-ghpages
+
+ng deploy --base-href=https://H0clar.github.io/portafolioAng/ --repo=https://github.com/H0clar/portafolioAng.git
