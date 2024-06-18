@@ -1,22 +1,22 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
 import { AppComponent } from './app.component';
+import { HomeComponent } from './landing/home/home.component';
+import { AboutComponent } from './landing/about/about.component';
+import routes from './app.routes';
 import { NavbarComponent } from './landing/navbar/navbar.component';
-import { HomeComponent } from './landing/home/home.component'; // Importa HomeComponent
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
+    HomeComponent,
+    AboutComponent
   ],
   imports: [
     BrowserModule,
-    CommonModule,
-    RouterModule.forRoot([
-      { path: '', component: HomeComponent } // Configura la ruta para HomeComponent
-    ])
+    RouterModule.forRoot(routes)
   ],
   providers: [],
   bootstrap: [AppComponent]
