@@ -2,13 +2,13 @@
     <!-- Navbar -->
     <header class="fixed top-0 left-0 w-full z-50">
         <div class="container mx-auto flex items-center justify-between py-4 px-6 bg-blue-900 bg-opacity-75">
-            <a href="/" class="text-2xl font-bold text-white">Julio Romero</a>
+            <a href="/" class="text-2xl font-bold text-white" (click)="scrollToSection($event, 'home')">Julio Romero</a>
   
             <nav class="hidden md:flex space-x-4">
-                <a href="#about" class="hover:text-yellow-400 text-white">Sobre mí</a>
-                <a href="#projects" class="hover:text-yellow-400 text-white">Proyectos</a>
-                <a href="#skills" class="hover:text-yellow-400 text-white">Habilidades</a>
-                <a href="#contact" class="hover:text-yellow-400 text-white">Contacto</a>
+                <a href="#about" class="hover:text-yellow-400 text-white" (click)="scrollToSection($event, 'about')">Sobre mí</a>
+                <a href="#projects" class="hover:text-yellow-400 text-white" (click)="scrollToSection($event, 'projects')">Proyectos</a>
+                <a href="#skills" class="hover:text-yellow-400 text-white" (click)="scrollToSection($event, 'skills')">Habilidades</a>
+                <a href="#contact" class="hover:text-yellow-400 text-white" (click)="scrollToSection($event, 'contact')">Contacto</a>
             </nav>
             <button class="md:hidden menu-icon" (click)="toggleNavbar()">
                 <div class="space-y-2">
@@ -20,10 +20,10 @@
         </div>
         <div *ngIf="!isNavbarCollapsed" class="md:hidden text-white bg-blue-900 bg-opacity-75">
             <nav class="space-y-4 px-4 py-6 text-center">
-                <a routerLink="/about" class="block py-2 hover:bg-gray-800 text-white">Sobre mí</a>
-                <a href="#projects" class="block py-2 hover:bg-gray-800 text-white">Proyectos</a>
-                <a href="#skills" class="block py-2 hover:bg-gray-800 text-white">Habilidades</a>
-                <a href="#contact" class="block py-2 hover:bg-gray-800 text-white">Contacto</a>
+                <a href="#about" class="block py-2 hover:bg-gray-800 text-white" (click)="scrollToSection($event, 'about')">Sobre mí</a>
+                <a href="#projects" class="block py-2 hover:bg-gray-800 text-white" (click)="scrollToSection($event, 'projects')">Proyectos</a>
+                <a href="#skills" class="block py-2 hover:bg-gray-800 text-white" (click)="scrollToSection($event, 'skills')">Habilidades</a>
+                <a href="#contact" class="block py-2 hover:bg-gray-800 text-white" (click)="scrollToSection($event, 'contact')">Contacto</a>
             </nav>
         </div>
     </header>

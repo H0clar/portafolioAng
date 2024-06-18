@@ -11,4 +11,16 @@ export class NavbarComponent {
   toggleNavbar() {
     this.isNavbarCollapsed = !this.isNavbarCollapsed;
   }
+
+  scrollToSection(event: Event, sectionId: string) {
+    event.preventDefault();
+    if (sectionId === 'home') {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    } else {
+      document.getElementById(sectionId)?.scrollIntoView({ behavior: 'smooth' });
+    }
+    if (!this.isNavbarCollapsed) {
+      this.toggleNavbar();
+    }
+  }
 }
