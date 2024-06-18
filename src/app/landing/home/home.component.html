@@ -2,7 +2,7 @@
 <section id="home" class="flex items-center justify-center min-h-screen pt-20" style="background-color: #1a202c;">
   <div class="container mx-auto flex flex-col md:flex-row items-center px-6">
       <div class="md:w-1/2 flex justify-center md:justify-start mb-6 md:mb-0">
-          <img src="assets/imagenes/LOGODevOsoBlanco.png" alt="Developer Logo" class="h-96 md:h-112 lg:h-128">
+          <img src="assets/imagenes/LOGODevOsoBlanco.png" alt="Developer Logo" class="h-80 md:h-96 lg:h-112">
       </div>
       <div class="md:w-1/2 text-center md:text-left">
           <h1 class="text-4xl md:text-6xl font-bold mb-4 text-white">Hola, soy Julio Romero</h1>
@@ -10,7 +10,19 @@
           <p class="text-lg md:text-xl mb-8 text-white">
               Bienvenido a mi página personal. Soy un Analista Programador apasionado por la tecnología y el desarrollo de software. Aquí podrás encontrar información sobre mis proyectos, habilidades y cómo contactarme.
           </p>
-          <a routerLink="/about" class="bg-yellow-400 text-black py-2 px-4 rounded hover:bg-yellow-500 transition duration-300">Saber más sobre mí</a>
+          <a (click)="scrollToSection($event, 'about')" class="bg-yellow-400 text-black py-2 px-4 rounded hover:bg-yellow-500 transition duration-300 cursor-pointer">Saber más sobre mí</a>
+          <div class="mt-8 flex justify-center md:justify-start space-x-4">
+              <a href="https://github.com/H0clar" target="_blank" rel="noopener noreferrer">
+                  <svg class="w-8 h-8 text-white hover:text-gray-400 transition duration-300 cursor-pointer" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M12 0C5.37 0 0 5.37 0 12c0 5.303 3.438 9.8 8.205 11.387.6.113.82-.263.82-.583 0-.288-.01-1.047-.015-2.054-3.338.726-4.042-1.613-4.042-1.613-.546-1.387-1.333-1.757-1.333-1.757-1.09-.745.083-.729.083-.729 1.204.084 1.837 1.236 1.837 1.236 1.07 1.834 2.809 1.304 3.495.998.107-.775.418-1.305.762-1.605-2.665-.303-5.466-1.334-5.466-5.933 0-1.31.468-2.382 1.235-3.22-.123-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.3 1.23.96-.267 1.99-.4 3.012-.405 1.02.005 2.05.138 3.01.405 2.29-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.12 3.176.77.838 1.234 1.91 1.234 3.22 0 4.61-2.804 5.625-5.476 5.92.43.372.823 1.102.823 2.222 0 1.606-.014 2.898-.014 3.292 0 .324.217.702.825.582C20.565 21.796 24 17.302 24 12c0-6.63-5.373-12-12-12z"/>
+                  </svg>
+              </a>
+              <a href="https://www.linkedin.com/in/julio-romero-60b14b25b/" target="_blank" rel="noopener noreferrer">
+                  <svg class="w-8 h-8 text-white hover:text-gray-400 transition duration-300 cursor-pointer" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.761 0 5-2.239 5-5v-14c0-2.761-2.239-5-5-5zM8.339 20.441h-3.386v-10.708h3.386v10.708zM6.648 8.354c-1.084 0-1.95-.87-1.95-1.945s.867-1.945 1.95-1.945c1.078 0 1.947.871 1.947 1.945s-.868 1.945-1.947 1.945zM20.441 20.441h-3.387v-5.853c0-1.393-.026-3.18-1.937-3.18-1.938 0-2.236 1.515-2.236 3.078v5.955h-3.386v-10.708h3.256v1.464h.046c.453-.856 1.559-1.756 3.208-1.756 3.428 0 4.059 2.259 4.059 5.194v6.807z"/>
+                  </svg>
+              </a>
+          </div>
       </div>
   </div>
 </section>

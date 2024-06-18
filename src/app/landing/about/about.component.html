@@ -1,38 +1,49 @@
-
-    <!-- About Me Section -->
-    <section id="about" class="flex items-center justify-center min-h-screen py-20 bg-gray-900">
-        <div class="container mx-auto px-6 text-center md:text-left">
-            <div class="flex justify-center mb-12">
-                <!-- Profile Picture -->
-                <a href="https://www.linkedin.com/in/julio-romero-60b14b25b/" target="_blank">
-                    <img src="https://media.licdn.com/dms/image/D4E35AQEJoc3lX7bMkg/profile-framedphoto-shrink_200_200/0/1717096122976?e=1718089200&v=beta&t=ckO72leja-XnHdkpmueygXwlHfT2H6jFYH17o6ybCw8" alt="Profile Picture" class="w-40 h-40 md:w-64 md:h-64 rounded-full border-4 border-white object-cover">
-                </a>
+<!-- about.component.html -->
+<section id="about" class="flex items-center justify-center min-h-screen py-20 bg-gray-900 text-white">
+    <div class="container mx-auto px-6 text-center md:text-left">
+        <div class="flex justify-center mb-12">
+            <!-- Profile Picture -->
+            <a href="https://www.linkedin.com/in/julio-romero-60b14b25b/" target="_blank" rel="noopener noreferrer">
+                <img src="assets/imagenes/perfil.jpg" alt="Julio Romero - Analista Programador" class="w-40 h-40 md:w-64 md:h-64 rounded-full border-4 border-white object-cover">
+            </a>
+        </div>
+        <div class="grid gap-8 grid-cols-1 md:grid-cols-2 max-w-7xl mx-auto">
+            <div class="bg-gray-800 p-10 rounded-lg shadow-md transition-transform transform hover:scale-105 min-h-[300px]">
+                <div class="flex justify-center md:justify-start mb-4">
+                    <i class="fas fa-graduation-cap text-purple-600 text-4xl"></i>
+                </div>
+                <h2 class="text-2xl font-bold mb-4 text-white">Formación Académica</h2>
+                <p class="text-lg mb-4">
+                    Soy Julio Romero, Analista Programador del CFT San Agustín. He aprendido Oracle, Java, MySQL, PHP, Python, C#, C++ y PostgreSQL.
+                </p>
             </div>
-            <div class="grid gap-8 grid-cols-1 md:grid-cols-2 max-w-7xl mx-auto">
-                <div class="bg-white p-8 rounded-lg shadow-md min-h-[300px]">
-                    <h2 class="text-2xl font-bold mb-4 text-gray-900">Formación Académica</h2>
-                    <p class="text-lg mb-4 text-gray-800">
-                        Mi nombre es Julio Romero, soy Analista Programador y realicé mis estudios en el Centro de Formación Técnica San Agustín. Durante mi primer año, recibí formación sobre bases de datos Oracle y Java para la creación de sistemas desktop. En el segundo año, amplié mis conocimientos con lenguajes como MySQL, PHP, Python, C#, C++, y PostgreSQL.
-                    </p>
+            <div class="bg-gray-800 p-10 rounded-lg shadow-md transition-transform transform hover:scale-105 min-h-[300px]">
+                <div class="flex justify-center md:justify-start mb-4">
+                    <i class="fas fa-laptop-code text-purple-600 text-4xl"></i>
                 </div>
-                <div class="bg-white p-8 rounded-lg shadow-md min-h-[300px]">
-                    <h2 class="text-2xl font-bold mb-4 text-gray-900">Conocimientos Técnicos</h2>
-                    <p class="text-lg mb-4 text-gray-800">
-                        Además, aprendí sobre el levantamiento y consumo de APIs, el desarrollo de aplicaciones móviles Android y el desarrollo de sistemas desktop. Esta variedad de conocimientos me ha permitido abordar proyectos de diversa índole con un enfoque integral.
-                    </p>
+                <h2 class="text-2xl font-bold mb-4 text-white">Conocimientos Técnicos</h2>
+                <p class="text-lg mb-4">
+                    Tengo experiencia en APIs, desarrollo móvil Android, sistemas de escritorio y desarrollo web, lo que me permite abordar proyectos diversos.
+                </p>
+            </div>
+            <div class="bg-gray-800 p-10 rounded-lg shadow-md transition-transform transform hover:scale-105 min-h-[300px]">
+                <div class="flex justify-center md:justify-start mb-4">
+                    <i class="fas fa-brain text-purple-600 text-4xl"></i>
                 </div>
-                <div class="bg-white p-8 rounded-lg shadow-md min-h-[300px]">
-                    <h2 class="text-2xl font-bold mb-4 text-gray-900">Intereses y Pasiones</h2>
-                    <p class="text-lg mb-4 text-gray-800">
-                        Paralelamente a mi formación académica, he complementado mi conocimiento mediante el uso de inteligencia artificial (GPT-4, Claude, LLaMA, Mistral). Soy un fanático de estas nuevas tecnologías emergentes y me mantengo siempre informado sobre las nuevas infraestructuras de desarrollo y formas de incluir estos sistemas a mis proyectos.
-                    </p>
+                <h2 class="text-2xl font-bold mb-4 text-white">Intereses y Pasiones</h2>
+                <p class="text-lg mb-4">
+                    Soy un entusiasta de la IA (GPT-4, Claude, LLaMA, Mistral) y me mantengo al día con las nuevas tecnologías para integrarlas en mis proyectos.
+                </p>
+            </div>
+            <div class="bg-gray-800 p-10 rounded-lg shadow-md transition-transform transform hover:scale-105 min-h-[300px]">
+                <div class="flex justify-center md:justify-start mb-4">
+                    <i class="fas fa-bullseye text-purple-600 text-4xl"></i>
                 </div>
-                <div class="bg-white p-8 rounded-lg shadow-md min-h-[300px]">
-                    <h2 class="text-2xl font-bold mb-4 text-gray-900">Objetivos Profesionales</h2>
-                    <p class="text-lg mb-4 text-gray-800">
-                        Mi pasión es estar al día con las últimas innovaciones en el campo del desarrollo de software, con el objetivo de llevar a la realidad proyectos que contribuyan significativamente. Me motiva la curiosidad y el deseo de aprender de personas más experimentadas, buscando siempre mejorar y crecer en mi carrera.
-                    </p>
-                </div>
+                <h2 class="text-2xl font-bold mb-4 text-white">Objetivos Profesionales</h2>
+                <p class="text-lg mb-4">
+                    Me apasiona la innovación en software y busco aprender de expertos para mejorar y crecer en mi carrera.
+                </p>
             </div>
         </div>
-    </section>
+    </div>
+</section>
