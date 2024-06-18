@@ -1,0 +1,38 @@
+.swiper {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
+  }
+  
+  .card {
+    width:100px; /* Ajusta el ancho de las cards */
+    height: 200px; /* Ajusta la altura de las cards */
+  }
+  
+  .card img {
+    height: 48px; /* Ajusta la altura de la imagen */
+  }
+  
+  .card h3 {
+    font-size: 1.25rem; /* Ajusta el tamaño del título */
+  }
+  
+  .card p {
+    font-size: 0.875rem; /* Ajusta el tamaño del texto del párrafo */
+  }
+  
+  .card .iconify {
+    width: 1.5rem; /* Ajusta el tamaño de los íconos */
+    height: 1.5rem; /* Ajusta el tamaño de los íconos */
+  }
+  
+  .card a {
+    font-size: 1.875rem; /* Ajusta el tamaño del texto del enlace */
+  }
+  
