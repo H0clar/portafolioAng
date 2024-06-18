@@ -117,7 +117,7 @@
                                     RememberMe API es una extensión del proyecto original, proporcionando una API robusta para interactuar con datos de recuerdos y ofrecer servicios de inteligencia artificial personalizados. Facilita la integración de características avanzadas en otras aplicaciones.
                                 </p>
                                 <div class="text-center">
-                                    <a href="https://web-production-8dd1.up.railway.app/api" target="_blank" rel="noopener noreferrer" class="inline-block bg-indigo-600 text-white py-2 px-6 rounded-full hover:bg-indigo-700 transition duration-300 transform hover:scale-105">Explora la API</a>
+                                    <a href="https://api-rememberme.up.railway.app/swagger/" target="_blank" rel="noopener noreferrer" class="inline-block bg-indigo-600 text-white py-2 px-6 rounded-full hover:bg-indigo-700 transition duration-300 transform hover:scale-105">Explora la API</a>
                                 </div>
                             </div>
                         </div>
