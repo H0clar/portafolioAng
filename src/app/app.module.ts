@@ -8,6 +8,7 @@ import { importProvidersFrom } from '@angular/core';
 import { provideRouter } from '@angular/router';
 import { ProjectsComponent } from './landing/projects/projects.component';
 import { SkillsComponent } from './landing/skills/skills.component';
+import { ContactComponent } from './landing/contact/contact.component';
 
 @NgModule({
   declarations: [
@@ -15,11 +16,12 @@ import { SkillsComponent } from './landing/skills/skills.component';
     NavbarComponent,
     HomeComponent,
     AboutComponent,
-    SkillsComponent
+    SkillsComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,
-    ProjectsComponent // Importa el componente independiente
+    ProjectsComponent 
   ],
   providers: [],
   bootstrap: [AppComponent]
