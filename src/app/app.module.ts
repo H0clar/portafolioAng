@@ -9,6 +9,7 @@ import { provideRouter } from '@angular/router';
 import { ProjectsComponent } from './landing/projects/projects.component';
 import { SkillsComponent } from './landing/skills/skills.component';
 import { ContactComponent } from './landing/contact/contact.component';
+import { FooterComponent } from './landing/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { ContactComponent } from './landing/contact/contact.component';
     HomeComponent,
     AboutComponent,
     SkillsComponent,
-    ContactComponent
+    ContactComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
