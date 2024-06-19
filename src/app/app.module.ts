@@ -7,13 +7,15 @@ import { NavbarComponent } from './landing/navbar/navbar.component';
 import { importProvidersFrom } from '@angular/core';
 import { provideRouter } from '@angular/router';
 import { ProjectsComponent } from './landing/projects/projects.component';
+import { SkillsComponent } from './landing/skills/skills.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
     HomeComponent,
-    AboutComponent
+    AboutComponent,
+    SkillsComponent
   ],
   imports: [
     BrowserModule,
